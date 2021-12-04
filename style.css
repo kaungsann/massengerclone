@@ -1,0 +1,276 @@
+body{
+  
+    margin: 0;
+    padding: 0;
+}
+.maincontainer{
+  
+   max-width: 1024px;
+   margin: 0 auto;
+   
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.button{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   background-image:linear-gradient(to right ,#4C5FFF,#BA3EDF,#FA5A8D);
+   text-align: center;
+   height: 100px;
+   margin-top: 50px;
+  
+}
+.left{
+   
+    display: inline-block;
+    width: 40%;
+}
+.rgiht{
+   
+    display: inline-block;
+    width: 50%;
+}
+.imagecontanier{
+    width: 80px;
+    height: 70px;
+}
+.images{
+    width: 100%;
+ 
+}
+.rightimage{
+    width: 500px;
+    height: 400px;
+    
+}
+.menuitem{
+    text-decoration: none;
+    color: inherit;
+    margin-right: 15px;
+    
+}
+.blckelement{
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 15px;
+    background-color:#F5F5F5 ;
+    outline: none;
+    width: 300px;
+    height: 35px;
+    padding: 3px 7px 3px;
+}
+.menuitem:hover{
+    border-bottom: 3px solid black;
+}
+.blck{
+    display: inline;
+}
+.buttonimg{
+    display: inline;
+    width: 150px;
+    height: 70px;
+    margin-right: 40px;}
+
+#h1{
+
+   background-image: linear-gradient(#4C5FFF,#FA5A8D);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   transition: all  .2s;
+   
+}
+
+.button1{
+    background-color:#0A7CFF;
+    padding: 5px 10px 5px;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    font-size: 19px;
+    height: 40px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.rgiht:hover{
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.span{
+    color: #0A84FF;
+    font-size: 18px;
+    margin-left: 25px;
+}
+.spa{
+    font-size: 15px;
+}
+.box{
+
+    margin-top: 10px;
+}
+.chek{
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#FFFFFF;
+    border-bottom: 1px solid darkgray;
+    opacity: 0.9;
+}
+
+.clone{
+    width: 50px;
+    height: 40px;
+}
+.img{
+    width: 50px;
+    height: 40px;
+    display: none;
+}
+.menubar{
+    display: none;
+    cursor: pointer;
+}
+.manu{
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0px;
+}
+.line2 ,.line1 ,.line3{
+    transition:all 0.5s ease;
+}
+.lineup2{
+    opacity: 0;
+}
+.lineup1{
+    transform: rotate(45deg) translate(5px,9px);
+}
+.lineup3{
+    transform: rotate(-45deg) translate(5px,-9px) ;
+}
+.overlaycontainer{
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+li{
+    font-size: bold;
+    list-style: none;
+    font-size: 30px;
+    padding: 35px;
+    margin-right: 150px;
+}
+
+.mainks{
+    position: relative;
+}
+
+@media (max-width:800px){
+    .menucontainer{
+      display:none;
+    }
+    .menubar{
+        display: block;
+        margin-left: 100px;
+        cursor: pointer;
+     
+     }
+
+     .right1{
+        display: none;
+     }
+     .botot{
+      
+         display: none;
+     }
+
+     .left{
+        width: 100%;
+      
+     }
+     .overlay{
+     position: absolute;
+    opacity: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+      
+    }
+     .inner{
+         margin:0 auto;
+         width: 70%;
+     }
+     .right{
+         width: 100%;
+     }
+     .clone2{
+         display: none;
+     }
+     .img2{
+         display: block;
+     }
+     body{
+        margin: 0;
+        padding: 0;
+    }
+
+    
+}
+@media (max-width:375px){
+    .menubar{
+        position: sticky;
+        display: block;
+        margin-left: 100px;
+     
+     }
+     .button{
+        height: 200px;
+    }
+     .overlay{
+        position: absolute;
+       opacity: 1;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       top: 0;
+       }
+     .right1{
+        display: none;
+     }
+     .botot{
+   
+         display: none;
+     }
+     body{
+         margin: 0;
+         padding: 0;
+     }
+ 
+}
